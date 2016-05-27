@@ -1,0 +1,157 @@
+doctype html(lang='en')
+head
+  title Register
+           
+  meta(charset='utf-8')
+           
+  link(rel='stylesheet', type='text/css', href='/css/styleregister.css')
+  // Compiled and minified CSS
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+           
+  script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+  // Compiled and minified JavaScript
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+           
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+           
+  script(type='text/javascript').
+    $(document).ready(function() {
+      $(".dropdown-button").dropdown();
+    })
+  // ____________________________________________________________________________________
+  body#home
+    nav
+      .nav-wrapper.head-bar
+        a.brand-logo.center(href='/') Photo CSS
+                     
+        ul#nav-mobile.right.hide-on-med-and-down
+          li
+            a.waves-effect.waves-light.btn(href="/Login") Login
+         
+    ul#dropdown1.dropdown-content
+        li
+          a(href='#!') Cityscape
+
+        li
+          a(href='#!') Landscape
+
+        li
+          a(href='#!') Portrait
+
+        li
+          a(href='#!') Others
+         
+    nav
+      .nav-wrapper.head-bar2
+        ul#nav-mobile.left.hide-on-med-and-down
+          li
+            a(href='/') Home
+          // <li><a href=""></a></li>
+          li
+            a.dropdown-button(href='#!', data-activates='dropdown1')
+              | Gallery
+              i.material-icons.right arrow_drop_down
+          |         
+          li
+            a(href='/upload') Upload
+          |         
+          li
+            a(href='/about') About
+        //
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><input type="text" placeholder="Username" name="user"></li>
+          <li><input type="password" placeholder="password" name="password"></li>
+          <li><a href="#" class="waves-effect waves-light btn">Login</a></li>
+          </ul>
+    // _________________________________________________________________________________________________________
+    //
+      <div class="row">
+      <div class="col s12">
+      <ul class="tabs">
+      <li class="tab col s3"><a href="#test1">Test 1</a></li>
+      <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+      <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+      <li class="tab col s3"><a href="#test4">Test 4</a></li>
+      </ul>
+      </div>
+      <div id="test1" class="col s12">Test 1</div>
+      <div id="test2" class="col s12">Test 2</div>
+      <div id="test3" class="col s12">Test 3</div>
+      <div id="test4" class="col s12">Test 4</div>
+      </div>
+    .containerr
+      h2.title  Register 
+           
+      h5.center Your information
+      
+      form(method ='post' , action = '/register')
+        p.center
+          .row
+            .input-field.col.s4
+              input#first_name2.validate(type='text', name='fname')
+              label.active(for='first_name2') First Name
+              
+            .input-field.col.s4
+              input#last_name2.validate(type='text', name='lname')
+              label.active(for='last_name2') Last Name
+                   
+          .row
+            .input-field.col.s6
+              input#email.validate(type='text', name='email')
+              label.active(for='email') Email
+                   
+          .row
+            .input-field.col.s4
+              input#username.validate(type='text', name='username')
+              label.active(for='username') Username
+                   
+          .row
+            .input-field.col.s4
+              input#password.validate(type='password', name='password')
+              label.active(for='password') Password
+                   
+          .row
+            .input-field.col.s4
+              i.material-icons.prefix phone
+              input#icon_telephone.validate(type='tel', name='tel')
+              label(for='icon_telephone') Telephone
+                      
+          .row
+            .input-field.col.s6
+              textarea#icon_prefix2.materialize-textarea(name='address')
+              label(for='icon_prefix2') Address
+               
+          p
+            input#male(name='gender', type='radio', value='male')
+            label(for='male') Male
+
+          p
+            input#female(name='gender', type='radio', value='female')
+            label(for='female') Female
+
+          .row.center
+            button.waves-effect.waves-light.btn(type= 'submit') Submit
+           
+      p
+    footer.page-footer.foot-bar
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text Department of Computer Science.
+                             
+            p.grey-text.text-lighten-4 Faculty of Science.
+                         
+          .col.l4.offset-l2.s12
+            h5.white-text Links
+                             
+            ul
+              li
+                a.grey-text.text-lighten-3(href='http://materializecss.com/') http://materializecss.com/
+                                 
+              li
+                a.grey-text.text-lighten-3(href='http://www.cs.science.cmu.ac.th/') http://www.cs.science.cmu.ac.th/
+                 
+      .footer-copyright
+        .container
+          | &copy; 2014 Copyright Text
+          a.grey-text.text-lighten-4.right(href='#!') More Links

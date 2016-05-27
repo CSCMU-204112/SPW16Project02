@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+head
+    title Photo CSS
+    meta(charset='utf-8')
+    link(rel='stylesheet', type='text/css', href='/css/styleregister.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    script(type='text/javascript').
+        $(document).ready(function() {
+            $(".dropdown-button").dropdown();
+        })
+    body#home
+        nav
+            .nav-wrapper.head-bar
+                a.brand-logo.center(href='/') Photo CSS
+                ul#nav-mobile.right.hide-on-med-and-down
+                    
+        ul#dropdown1.dropdown-content
+            li
+                a(href='#!') Cityscape
+            li
+                a(href='#!') Landscape
+            li
+                a(href='#!') Portrait
+            li
+                a(href='#!') Others
+        nav
+            .nav-wrapper.head-bar2
+                ul#nav-mobile.left.hide-on-med-and-down
+                    li
+                        a(href='/') Home
+                    li
+                        a.dropdown-button(href='#!', data-activates='dropdown1')
+                            | Gallery
+                            i.material-icons.right arrow_drop_down
+                    li
+                        a(href='/upload') Upload
+                    li
+                        a(href='/about') About
+        //
+            ______________________________________________________________________________________________________
+        .containerr
+            .text-center
+                div(style='background-color: #e3f2fd')
+                    // Grey navigation panel
+                    h1 BUY
+                    img(src='https://pixabay.com/static/uploads/photo/2015/12/08/00/49/ocean-view-1082081_960_720.jpg', width='350', height='200', border='1')
+                    p Name : Ocean
+                    p Type : Landscape
+                    p Price : 4,200 ฿
+                    a.waves-effect.waves-light.btn(href='/buy') Accept
+                    
+                    a.waves-effect.waves-light.btn(href='/') Cancel
+        footer.page-footer.foot-bar
+            .container
+                .row
+                    .col.l6.s12
+                        h5.white-text Department of Computer Science.
+                        p.grey-text.text-lighten-4 Faculty of Science.
+                    .col.l4.offset-l2.s12
+                        h5.white-text Links
+                        ul
+                            li
+                                a.grey-text.text-lighten-3(href='http://materializecss.com/') http://materializecss.com/
+                            li
+                                a.grey-text.text-lighten-3(href='http://www.cs.science.cmu.ac.th/') http://www.cs.science.cmu.ac.th/
+            .footer-copyright
+                .container
+                    | &copy; 2014 Copyright Text
+                    a.grey-text.text-lighten-4.right(href='#!') More Links

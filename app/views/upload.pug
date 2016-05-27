@@ -1,0 +1,174 @@
+doctype html
+html(lang='en')
+	head
+		title Upload
+		meta(charset='utf-8')
+		link(rel='stylesheet', type='text/css', href='/css/styleregister.css')
+		// Compiled and minified CSS
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+		// Compiled and minified JavaScript
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		script(type='text/javascript').
+			$(document).ready(function() {
+				$(".dropdown-button").dropdown();
+			});
+		// ____________________________________________________________________________________
+	body#home
+		nav
+			.nav-wrapper.head-bar
+				a.brand-logo.center(href='/') Photo CSS
+				ul#nav-mobile.right.hide-on-med-and-down
+					// <li><a href="file:///C:/Users/CSB307/Desktop/Project-CSS/Project%20CSS/register.html" class="waves-effect waves-light btn">Sign Up</a></li>
+		ul#dropdown1.dropdown-content
+			li
+				a(href='#!') Cityscape
+
+			li
+				a(href='#!') landscape
+
+			li
+				a(href='#!') Portrait
+
+			li
+				a(href='#!') Others
+		nav
+			.nav-wrapper.head-bar2
+				ul#nav-mobile.left.hide-on-med-and-down
+					li
+						a(href='/') Home
+					// <li><a href=""></a></li>
+					li
+						a.dropdown-button(href='#!', data-activates='dropdown1')
+							| Gallery
+							i.material-icons.right arrow_drop_down
+					li
+						a(href='/upload') Upload
+					li
+						a(href='/about') About
+				//
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><input type="text" placeholder="Username" name="user"></li>
+					<li><input type="password" placeholder="password" name="password"></li>
+					<li><a href="#" class="waves-effect waves-light btn">Login</a></li>
+					</ul>
+		// _________________________________________________________________________________________________________
+		//
+			<div class="row">
+			<div class="col s12">
+			<ul class="tabs">
+			<li class="tab col s3"><a href="#test1">Test 1</a></li>
+			<li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+			<li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+			<li class="tab col s3"><a href="#test4">Test 4</a></li>
+			</ul>
+			</div>
+			<div id="test1" class="col s12">Test 1</div>
+			<div id="test2" class="col s12">Test 2</div>
+			<div id="test3" class="col s12">Test 3</div>
+			<div id="test4" class="col s12">Test 4</div>
+			</div>
+		.containerr
+			h2.title  Upload 
+			form(action='#')
+				.file-field.input-field
+					.btn
+						span File
+						input(type='file' ,name="pname", size="chars")
+					.file-path-wrapper
+						input.file-path.validate(type='text')
+			form(action='#')
+				p
+					input#test1(type='checkbox')
+					label(for='test1') Cityscape
+				p
+					input#test2(type='checkbox')
+					label(for='test2') landscape
+				p
+					input#test3(type='checkbox')
+					label(for='test3') Portrait
+				p
+					input#test4(type='checkbox')
+					label(for='test4') Others
+			br
+			button.btn.waves-effect.waves-light(type='submit', name='action', href='/')
+				| uPLOAD
+				i.material-icons.right send
+		//
+			<h5 class="center">Your information</h5>
+			<p class="center">
+			<div class="row">
+			<div class="input-field col s4">
+			<input id="first_name2" type="text" class="validate">
+			<label class="active" for="first_name2">First Name</label>
+			</div>
+			<div class="input-field col s4">
+			<input id="last_name2" type="text" class="validate">
+			<label class="active" for="last_name2">Last Name</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s6">
+			<input id="email" type="text" class="validate">
+			<label class="active" for="email">Email</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s4">
+			<input id="username" type="text" class="validate">
+			<label class="active" for="username">Username</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s4">
+			<input id="password" type="password" class="validate">
+			<label class="active" for="password">Password</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s4">
+			<i class="material-icons prefix">phone</i>
+			<input id="icon_telephone" type="tel" class="validate">
+			<label for="icon_telephone">Telephone</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s6">
+			<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+			<label for="icon_prefix2">Address</label>
+			</div>
+			</div>
+			<form action="#">
+			<p>
+			<input name="group1" type="radio" id="male" />
+			<label for="male">Male</label>
+			</p>
+			<p>
+			<input name="group1" type="radio" id="female" />
+			<label for="female">Female</label>
+			</p>
+			</p>
+			</form>
+			<div class="row center">
+			<a class="waves-effect waves-light btn">Submit</a>
+			</div>
+			</p>
+			</div>
+		footer.page-footer.foot-bar
+			.container
+				.row
+					.col.l6.s12
+						h5.white-text Department of Computer Science.
+						p.grey-text.text-lighten-4 Faculty of Science.
+					.col.l4.offset-l2.s12
+						h5.white-text Links
+						ul
+							li
+								a.grey-text.text-lighten-3(href='http://materializecss.com/') http://materializecss.com/
+							li
+								a.grey-text.text-lighten-3(href='http://www.cs.science.cmu.ac.th/') http://www.cs.science.cmu.ac.th/
+			.footer-copyright
+				.container
+					| &copy; 2014 Copyright Text
+					a.grey-text.text-lighten-4.right(href='#!') More Links

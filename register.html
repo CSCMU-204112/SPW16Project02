@@ -1,0 +1,135 @@
+<!DOCTYPE html(lang='en')>
+<head>
+  <title>Register</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="styleregister.css"/>
+  <!-- Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $(".dropdown-button").dropdown();
+    })
+  </script>
+  <!-- ____________________________________________________________________________________-->
+  <body id="home">
+    <nav>
+      <div class="nav-wrapper"><a class="brand-logo center" href="file:///C:/Users/CSB307/Desktop/Project-CSS/Project%20CSS/main.html">Photo CSS</a>
+        <ul class="right hide-on-med-and-down" id="nav-mobile">
+          <li><a class="waves-effect waves-light btn" href="file:///C:/Users/CSB307/Desktop/Project-CSS/Project%20CSS/register.html">Sign Up</a></li>
+          <!-- <li><a href="file:///C:/Users/CSB307/Desktop/Project-CSS/Project%20CSS/login.html" class="waves-effect waves-light btn">Login</a></li>-->
+        </ul>
+      </div>
+    </nav>
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <ul class="left hide-on-med-and-down" id="nav-mobile">
+          <li><a href="#">Home</a></li>
+          <!-- <li><a href=""></a></li>-->
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">
+              <Gallery></Gallery><i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down" id="nav-mobile">
+          <li>
+            <input type="text" placeholder="Username" name="user"/>
+          </li>
+          <li>
+            <input type="password" placeholder="password" name="password"/>
+          </li>
+          <li><a class="waves-effect waves-light btn" href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="containerr">
+      <h2 class="title"> Register </h2>
+      <h5 class="center">Your information</h5>
+      <p class="center">
+        <div class="row">
+          <div class="input-field col s4">
+            <input class="validate" id="first_name2" type="text" name="fname"/>
+            <label class="active" for="first_name2">First Name</label>
+          </div>
+          <div class="input-field col s4">
+            <input class="validate" id="last_name2" type="text" name="lname"/>
+            <label class="active" for="last_name2">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input class="validate" id="email" type="text" name="email"/>
+            <label class="active" for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input class="validate" id="username" type="text" name="username"/>
+            <label class="active" for="username">Username</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4">
+            <input class="validate" id="password" type="password" name="password"/>
+            <label class="active" for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s4"><i class="material-icons prefix">phone</i>
+            <input class="validate" id="icon_telephone" type="tel" name="tel"/>
+            <label for="icon_telephone">Telephone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <textarea class="materialize-textarea" id="icon_prefix2" name="address"></textarea>
+            <label for="icon_prefix2">Address</label>
+          </div>
+        </div>
+        <form action="#">
+          <p>
+            <input id="gender" name="male" type="radio" value="male" />
+            <label for="male">Male</label>
+          </p>
+          <p>
+            <input id="gender" name="female" type="radio" value="female" />
+            <label for="female">Female</label>
+          </p>
+        </form>
+      </p>
+      <div class="row center"><a class="waves-effect waves-light btn">Submit</a></div>
+      <p></p>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">&copy; 2014 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">More Links</a></div>
+      </div>
+    </footer>
+  </body>
+</head>

@@ -1,0 +1,23 @@
+body {
+    background-color: #fafafa;
+}
+
+.containerr {
+    background-color: #ffffff;
+    width: 75%;
+    margin: auto;
+    padding: 0px;
+
+}
+.title {
+    font-size: 50px;
+  border-top: 5px solid #2980b9;
+  padding: 15px;
+  background-color: #3498db;
+  color: #ffffff;
+
+}
+.title2{
+    color: blue;
+    font-size: 30px;
+}

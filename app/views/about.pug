@@ -1,0 +1,55 @@
+doctype html
+html
+head
+    title About Us   
+    meta(charset='utf-8')
+          
+    link(rel='stylesheet', ,='', type='text/css', href='/css/styleregister.css')
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    script(type='text/javascript').
+      $(document).ready(function() {
+          $(".dropdown-button").dropdown();
+      })
+    body#home
+     nav
+      .nav-wrapper.head-bar
+        a.brand-logo.center(href='/') Photo CSS
+        ul#nav-mobile.right.hide-on-med-and-down
+      ul#dropdown1.dropdown-content
+        li
+          a(href='#!') Cityscape
+        li
+          a(href='#!') Landscape
+        li
+          a(href='#!') Portrait
+        li
+          a(href='#!') Others
+    nav
+      .nav-wrapper.head-bar2
+        ul#nav-mobile.left.hide-on-med-and-down
+          li
+            a(href='/') Home
+          li
+            a.dropdown-button(href='#!', data-activates='dropdown1')
+              | Gallery
+              i.material-icons.right arrow_drop_down
+          li
+            a(href='/upload') Upload
+          li
+            a(href='/about') About
+    .containerr
+      h3.title What is Photo CSS?
+      p Photo CSS is sale and buy picture. It was founded on May 26, 2016.
+      h3.title Member
+      ul
+        li 570510648 Nichapat    Yanwachira    
+        li 580510575 Sirapob      Sithi         
+        li 580510610 Piyada       Fongkaew      
+        li 580510618 Phatrapol   Sungkataumpon 
+        li 580510619  Panupong  Sirirat       
+        li 580510652 Aunyanee   Wongduen     

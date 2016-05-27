@@ -1,0 +1,146 @@
+doctype html
+html(lang='en')
+	head
+		title Photo CSS
+		link(rel='stylesheet', ,='', type='text/css', href='/css/styleregister.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		script(type='text/javascript').
+			$(document).ready(function() {
+				$(".dropdown-button").dropdown();
+			})
+	body#home
+		nav
+			.nav-wrapper.head-bar
+				a.brand-logo.center(href='/') Photo CSS
+				if user === undefined
+					ul#nav-mobile.right.hide-on-med-and-down
+						li
+							a.waves-effect.waves-light.btn(href='/register') Sign Up
+		ul#dropdown1.dropdown-content
+			li
+				a(href='#!') Cityscape
+			li
+				a(href='#!') landscape
+			li
+				a(href='#!') Portrait
+			li
+				a(href='#!') Others
+		nav
+			.nav-wrapper.head-bar2
+				ul#nav-mobile.left.hide-on-med-and-down
+					li
+						a(href='/') Home
+					// <li><a href=""></a></li>
+					li
+						a.dropdown-button(href='#!', data-activates='dropdown1')
+							| Gallery
+							i.material-icons.right arrow_drop_down
+					li
+						a(href='/upload') Upload
+					li
+						a(href='/about') About
+				if user === undefined
+					form(method='post', action='/login')
+						ul#nav-mobile.right.hide-on-med-and-down
+							li
+								input(type='text', placeholder='Username', name='username')
+							li
+								input(type='password', placeholder='password', name='password')
+							li
+								button.waves-effect.waves-light.btn(type='submit') Login
+				else
+					ul#nav-mobile.right.hide-on-med-and-down
+						li(style='font-size : 20px;')
+							|#{user}
+						li
+							a.waves-effect.waves-light.btn(href='/logout') Log Out
+		.containerr
+			.row
+				.col.s4(style='background-color: #e3f2fd')
+					// Grey navigation panel
+					img(src='http://topicstock.pantip.com/camera/topicstock/2007/06/O5494364/O5494364-3.jpg', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='/buy1') Click to Buy
+					img(src='http://sv6.postjung.com/picpost/data/240/240122-521e0a262c356.jpg', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='/buy2') Click to Buy
+					img(src='http://pix4.agoda.net/hotelimages/443/443651/443651_14120817110023838390.jpg?s=800x600', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='/buy3') Click to Buy
+				.col.s4(style='background-color: #e3f2fd')
+					// Grey navigation panel
+					img(src='http://ed.files-media.com/ud/book/content/1/148/441951/The_Giant_Chiangmai.2.jpg', width='300', height='200', border='1')
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='buy4') Click to Buy
+					img(src='http://i.kapook.com/tripplep/24-11-54/view1.jpg', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='buy5') Click to Buy
+					img(src='http://i.kapook.com/faiiya/21-2-54/wat2.jpg', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='buy6') Click to Buy
+				.col.s4(style='background-color: #e3f2fd')
+					// Teal page content
+					img(src='http://wd.thaibuffer.com/o/photo/136/kapook_world-135066.jpg', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='buy7') Click to Buy
+					img(src='https://pixabay.com/static/uploads/photo/2015/12/08/00/49/ocean-view-1082081_960_720.jpg', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='buy8') Click to Buy
+					img(src='https://www.wonderfulpackage.com/uploads/moxie/Article/Kanuman/thai10.jpg', width='300', height='200', border='1')
+					br
+					.row.center
+						if login === undefined
+							a.waves-effect.waves-light.btn(href='/register') Click to Buy
+						else
+							a.waves-effect.waves-light.btn(href='buy9') Click to Buy
+			footer.page-footer.foot-bar
+				.container
+					.row
+						.col.l6.s12
+							h5.white-text Department of Computer Science.
+							p.grey-text.text-lighten-4 Faculty of Science.
+						.col.l4.offset-l2.s12
+							h5.white-text Links
+							ul
+								li
+									a.grey-text.text-lighten-3(href='http://materializecss.com/') http://materializecss.com/
+								li
+									a.grey-text.text-lighten-3(href='http://www.cs.science.cmu.ac.th/') http://www.cs.science.cmu.ac.th/
+				.footer-copyright
+					.container
+						| &copy; 2014 Copyright Text
+						a.grey-text.text-lighten-4.right(href='#!') More Links
